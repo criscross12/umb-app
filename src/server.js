@@ -1,4 +1,5 @@
 const express = require("express");
+import { indexRouter } from "./routes/index.routes";
 const exphbs = require('express-handlebars');
 const path = require('path');
 const Ove = require("method-override");
@@ -42,9 +43,7 @@ app.use(flash());
 //global vars
 
 //routes
-app.get('/',(req,res) =>{
-    res.send("Hello Peter");
-})
+app.use(indexRouter)
 //static files
 app.use(express.static(path.join(__dirname,'public')));
 
