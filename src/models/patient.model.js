@@ -1,38 +1,52 @@
-const { Schema, model } = require("mongoose");
-const PatientSchema = new Schema(
+import { Schema, model, } from "mongoose";
+
+ const PatientSchema  = new Schema(
   {
     nombre: {
-      type: String,
-      required: true,
+        type: String,
+        required : true,
     },
     ap_paterno: {
-      type: String,
-      requeried: false,
+        type : String,
+        required : true,
     },
-    ap_materno: {
-      type: String,
-      required: true,
+    ap_materno:{
+        type: String,
+        required : true,
     },
-    matricula: {
-      type: Number,
-      required: true,
+    FechaNacimiento: {
+        type: Date,
+        required: true,
     },
-    password: {
-      type: String,
-      requeried: true,
+    edad:{
+        type: Int,
+        required: true,
     },
-    semestre: {
-      type: String,
-      requiered: true,
+    e_mail:{
+        type: String,
+        required: true,
     },
-    carrera: {
-      type: String,
-      requiered: true,
+    ocupacion: {
+        type: String,
+        required: true,
+    },
+    telefono: {
+        type: String,
+        required: true,
+    },
+    Motivo: {
+        type: String,
+        required: true,
+    },
+    estatus: {
+        type: Boolean,
+        required: true,
     },
   },
   {
-    timestamps: true,
+      timestamps: true,
   }
-);
 
-module.exports = model("Patient", PatientSchema);
+)
+
+export default model("Patient",PatientSchema);
