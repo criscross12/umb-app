@@ -19,7 +19,7 @@ import { Schema, model, } from "mongoose";
         required: true,
     },
     edad:{
-        type: Int,
+        type: Number,
         required: true,
     },
     e_mail:{
