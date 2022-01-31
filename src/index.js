@@ -1,6 +1,7 @@
 import app from "./app";
 import "./database";
-import { PORT } from "./config";
 
-app.listen(PORT)
-console.log("Server on port" , PORT);
+app.listen(app.get("port"))
+
+console.log("Server on port", app.get("port"));
+console.log("Environment:", process.env.NODE_ENV);

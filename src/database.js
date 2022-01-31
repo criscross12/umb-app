@@ -1,12 +1,17 @@
-import { connect } from "mongoose";
-import { MONGODB_URI } from "./config";
+import mongoose from "mongoose";
+import config from "./config";
 
-(async ()=>{
-    try {
-        const db = await connect(MONGODB_URI)
-        console.log("DB connected to", db.connection.name);
-    } catch (error) {        
-        console.log(error);
-    }
+(async () => {
+  try {
+    const db = await mongoose.connect(config.MONGODB_URI, {
+      // useNewUrlParser: true,
+      // useUnifiedTopology: true,
+      // useFindAndModify: false,
+      // // useCreateIndex: true,
+    });
+    console.log("Mongodb is connected to", db.connection.host);
+  } catch (error) {
+    console.error(error);
+  }
 })();
 

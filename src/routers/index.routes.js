@@ -1,4 +1,5 @@
 import { Router } from "express";
+import { savePatient } from "../controllers/patient.controller";
 
 const router = Router();
  
