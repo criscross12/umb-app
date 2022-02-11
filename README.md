@@ -21,3 +21,10 @@ Subir los cambios 3. git push origin NOMBRE_DE_LA_RAMA
 ### Enviroment variables
 
 Para correr el proyecto de manera correcta crear archivo .env en la raiz del proyecto con las siguientes variables
+
+## Default User
+
+when the app is lauched, this will create an Admin user with the following credentials:
+
+- email: admin@localhost
+- password: adminpassword
