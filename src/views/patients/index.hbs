@@ -1,0 +1,42 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h5>Chanchito feliz</h5>
+    <div class="row">
+      <div class="col-sm-3">
+        <ul>
+          <li><h5>Datos generales</h5></li>
+          <li>Tea</li>
+          <li>Milk</li>
+        </ul>
+      </div>
+      <div class="col-sm-3">
+        <form action="/patients/save" method="post">
+          <div class="form-group">
+        <input type="text" name="name" placeholder="Nombre" />
+          </div>
+           <div class="form-group">
+        <input type="text" name="AP" placeholder="Apellido Paterno" />
+          </div>
+                    <input type="text" name="AM" placeholder="Apellido Materno" />
+          <input type="date" name="FN" />
+          <input type="email" name="email" placeholder="Nombre" />
+          <input type="text" name="ocupacion" placeholder="Nombre" />
+          <input type="text" name="Phone" placeholder="N.Telefonico" />
+          <input type="text" name="motivo" placeholder="Motivo" />
+
+          <button class="btn btn-primary btn-block" type="submit">
+            Save
+          </button>
+        </form>
+      </div>
+    </div>
+
+  </body>
+</html>

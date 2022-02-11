@@ -41,6 +41,7 @@ import { Schema, model, } from "mongoose";
     estatus: {
         type: Boolean,
         required: true,
+        default: true
     },
   },
   {

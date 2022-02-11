@@ -1,14 +1,17 @@
 import { Router } from "express";
-import { savePatient } from "../controllers/patient.controller";
+import { isAuthenticated } from "../helpers/auth";
+import {renderWelcome} from "../controllers/index.controller"
 
 const router = Router();
- 
-router.get('/',(req,res)=>{
-    res.render('index');
+
+router.get('/welcome',renderWelcome);
+
+router.get("/", (req, res) => {
+  res.render("index");
 });
 
-router.get('/about',(req,res)=>{
-    res.send("Section about");
+router.get("/about", isAuthenticated,(req, res) => {
+  res.render("patients/index");
 });
 
 export default router;

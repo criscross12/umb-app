@@ -12,6 +12,7 @@ import config from "./config";
 
 import indexR from "./routers/index.routes";
 import userRouters from "./routers/admin.routes";
+import patientsRouter from "./routers/patients.routes"
 import "./config/passport"
 
 const app = express();
@@ -59,6 +60,7 @@ app.use((req, res, next) => {
 //Routes
 app.use(indexR);
 app.use(userRouters);
+app.use(patientsRouter);
 
 // static files
 app.use(express.static(path.join(__dirname, "public")));

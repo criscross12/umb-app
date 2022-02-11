@@ -6,8 +6,8 @@ Logo Dell: https://worldvectorlogo.com/logo/dell-1
 */
 
 :root {
-  --dark: #16191c;
-  --dark-x: #1e2126;
+  --dark: #1c103f;
+  --dark-x: #1c103f;
   --light: #ffffff;
 }
 
@@ -42,13 +42,13 @@ body {
 }
 
 .img-1 {
-  background-image: url("/imgs/image.jpg");
+  background-image: url("/imgs/img-1.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .img-2 {
-  background-image: url("img-2.jpg");
+  background-image: url("/imgs/img-2.jpg");
   background-size: cover;
   background-position: center;
 }
