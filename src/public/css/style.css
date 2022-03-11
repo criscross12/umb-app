@@ -45,6 +45,7 @@ body {
   background-image: url("/imgs/img-1.jpg");
   background-size: cover;
   background-position: center;
+
 }
 
 .img-2 {
@@ -52,3 +53,5 @@ body {
   background-size: cover;
   background-position: center;
 }
+
+

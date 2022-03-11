@@ -30,6 +30,7 @@ export const savePatient = async (req, res) => {
     telefono:Phone,
     Motivo:motivo,
   });
+  
   console.log(newPatient);
   await newPatient.save();
   req.flash("success_msg", "Note Added Successfully");

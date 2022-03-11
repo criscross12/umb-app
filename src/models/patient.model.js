@@ -38,6 +38,7 @@ import { Schema, model, } from "mongoose";
         type: String,
         required: true,
     },
+    
     estatus: {
         type: Boolean,
         required: true,
