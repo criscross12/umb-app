@@ -17,7 +17,6 @@ export const savePatient = async (req, res) => {
     Phone,
     motivo,
   } = req.body;
-  console.log(req.body);
 
   const newPatient = new patient({
     nombre:name,
