@@ -7,7 +7,7 @@ router.get('/',(req,res)=>{
     res.render('index');
 });
 
-router.get('/about',renderPatientForm);
+router.get('/patients/formsave',renderPatientForm);
 
 router.post("/patients/save", savePatient);
 

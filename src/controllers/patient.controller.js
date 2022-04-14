@@ -17,7 +17,6 @@ export const savePatient = async (req, res) => {
     Phone,
     motivo,
   } = req.body;
-  console.log(req.body);
 
   const newPatient = new patient({
     nombre:name,
@@ -30,6 +29,7 @@ export const savePatient = async (req, res) => {
     telefono:Phone,
     Motivo:motivo,
   });
+  
   console.log(newPatient);
   await newPatient.save();
   req.flash("success_msg", "Note Added Successfully");
